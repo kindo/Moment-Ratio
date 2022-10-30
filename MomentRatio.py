@@ -39,7 +39,7 @@ class MomentRatio():
     def pwm_br_2(self, r=1):
         
         
-        """"
+        """
         Method to compute the probability weighted moment (Rasmussen, 2001)
         
         ========================================================================
@@ -49,7 +49,7 @@ class MomentRatio():
         Water Resour. Res., 37( 6), 1745– 1751, 
         doi:10.1029/2001WR900014.
             
-        """"
+        """
         
         from scipy.special import comb
         import numpy as np 
