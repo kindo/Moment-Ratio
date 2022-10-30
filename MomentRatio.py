@@ -148,6 +148,7 @@ class MomentRatio():
         import matplotlib.pyplot as plt
         import seaborn as sns
         import pandas as pd
+        import numpy as np
     
         def plotting_MRD(xmin=-1, xmax=1, ymin=-0.24, ymax=1, distributions=True):
     
@@ -156,7 +157,8 @@ class MomentRatio():
             fig, ax = plt.subplots()
             
             if distributions:
-                distributionLMR = pd.read_csv("Distributions_LMR.csv", index_col=False)
+                url = "https://raw.githubusercontent.com/kindo/Moment-Ratio/main/Distributions_LMR.csv"
+                distributionLMR = pd.read_csv(url, index_col=False)
                 colname = distributionLMR.columns.values
 
 
